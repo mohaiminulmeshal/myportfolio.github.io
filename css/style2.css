@@ -176,6 +176,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #003333;
   box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
   border-radius: 10px;
 }
@@ -206,7 +207,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(39, 39, 39);
+  background-color: #003333;
   box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
   width: 550px;
   height: 400px;
@@ -240,7 +241,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(39, 39, 39);
+  background-color: #003333;
   box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
   width: 550px;
   height: 680px;
@@ -254,13 +255,13 @@ input {
   border-radius: 5px;
   border:none;
   padding: 5px;
-  background-color: grey;
+  background-color: black;
   color: white;
   margin: 2px;
 }
 
 .button__wrapper button:hover{
-  background-color: rgba(128, 128, 128, .5);
+  background-color: #003333;
 }
 
 button{
@@ -295,4 +296,29 @@ button:hover{
   color: #003333;
         transform: scale(1.02);
         box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.button2 {
+  background-color: #003333;
+  border: none;
+  color: white;
+  box-shadow: 0px 0px 10px #b3b300;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
 }
