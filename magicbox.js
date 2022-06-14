@@ -13,8 +13,13 @@ const clearBtnHandler = () => {
 };
 
 const capitalizeBtnHandler = () => {
-  textArea.value = textArea.value.toUpperCase();
-};
+  if(textArea.value === textArea.value.toUpperCase()){
+    textArea.value = textArea.value.toLowerCase();
+  }
+  else if(textArea.value === textArea.value.toLowerCase()){
+    textArea.value = textArea.value.toUpperCase();
+  };
+}
 
 const sortBtnHandler = () => {
   const textAreaContent = textArea.value.trim();
