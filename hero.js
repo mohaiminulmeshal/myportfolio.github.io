@@ -1,27 +1,18 @@
 var input = document.getElementById("input");
 var result = document.getElementById("result");
-var inputType = document.getElementById("inputType");
-var resultType = document.getElementById("resultType");
-var inputTypeValue, resultTypeValue;
+var conversionType = document.getElementById("conversionType");
+var conversionTypeValue;
 
 input.addEventListener("keyup", myResult);
-inputType.addEventListener("change", myResult);
-resultType.addEventListener("change", myResult);
+conversionType.addEventListener("change", myResult);
 
-inputTypeValue = inputType.value;
-resultTypeValue = resultType.value;
-console.log("shv");
+conversionTypeValue = resultType.value;
+console.log(conversionTypeValue);
 function myResult() {
-  inputTypeValue = inputType.value;
-  resultTypeValue = resultType.value;
-
-  if (inputTypeValue === "Pound" && resultTypeValue === "Kilogram") {
-    result.value = Number(input.value) * 0.4536;
-  } else if (inputTypeValue === "Kilogram" && resultTypeValue === "Pound") {
+  conversionTypeValue = conversionType.value;
+  if (conversionTypeValue === "K2P") {
     result.value = Number(input.value) * 2.2046;
-  } else if (inputTypeValue === "Kilogram" && resultTypeValue === "Kilogram") {
-    result.value = input.value;
-  } else if (inputTypeValue === "Pound" && resultTypeValue === "Pound") {
-    result.value = input.value;
-  }
+  } else { 
+    result.value=Number(input.value)*0.4536;
+  } 
 }
