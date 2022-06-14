@@ -40,3 +40,4 @@ const inputChangeHandler = (event) => {
 
 
 inputNumbers.addEventListener("change", inputChangeHandler);
+inputNumbers.addEventListener("keyup", inputChangeHandler);
